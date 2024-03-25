@@ -1,0 +1,7 @@
+<!--HTML-->
+<h1>heading</h1> 
+
+//Java 
+document.querySelector("h1").onclick = function () {
+    alert("Ouch! Stop poking me!");
+  };
