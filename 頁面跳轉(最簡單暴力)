@@ -1,0 +1,5 @@
+<!--HTML-->
+<div class="box7"><a href="subsite-coffee.html">咖啡拉花</a></div>
+<!--只有字-->
+<div class="box7" onclick="location.href='subsite-coffee.html';">咖啡拉花</div>
+<!--整個box-->
