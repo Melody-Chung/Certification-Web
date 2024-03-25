@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>My test page</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+  <h1>heading</h1>
+  <button>Change user</button>
+
+  <!--選單1 (Hover)-->
+  <span class="main-menu" onmouseover="switchMenu( this, 'SubMenu1', 'MouseOver' )" onmouseout="hideMenu()">Menu1(Hover) <span style="font-size:9px;">&#9660;</span>
+  <ul id="SubMenu1" class="sub-menu" style="display:none; width: 206.5px;">
+    <li><a href="http://www.vixual.net/" target="_blank">Vixual</a></li>
+    <li><a href="http://www.google.com.tw/" target="_blank">Google</a></li>
+    <li><a href="http://tw.yahoo.com/" target="_blank">Yahoo!奇摩</a></li>
+  </ul>
+  </span>
+
+<!-- 選單2 (Click)
+  <span class="main-menu" onclick="switchMenu( this, 'SubMenu2' )">Menu2(Click) <span style="font-size:9px;">&#9660;</span>
+  <ul id="SubMenu2" class="sub-menu" style="display:none;">
+      <li><a href="http://www.vixual.net/" target="_blank">Vixual</a></li>
+      <li><a href="http://www.google.com.tw/" target="_blank">Google</a></li>
+      <li><a href="http://tw.yahoo.com/" target="_blank">Yahoo!奇摩</a></li>
+  </ul> 
+  </span> -->
+  
+  <h2><font color="red"><strong>Hot!!</strong></font></h2>
+  <div class="move" style="position:absolute; top:600px" onmouseover="switchroll( )" onmouseout="hideMenu()"> < </div>
+  <div class="wrapper">
+      <div class="box1"><img src="images/coffee.jpg" alt="My test image"/></div>
+      <div class="box2"><img src="images/apcs.png" alt="My test image" /></div>
+      <div class="box3"><img src="images/gept.jpg" alt="My test image" /></div>
+
+      <div class="box4" onclick="location.href='subsite-coffee.html';" target="_blank">咖啡拉花</div>
+      <div class="box5"><a href="subsite-coffee.html" target="_blank">APCS程式能力檢定</a></div>
+      <div class="box6" onclick="location.href='subsite-coffee.html';">全民英檢</div>
+  </div>
+  <div class="move" style="position:absolute; top:600px; right:10px"> > </div>
+  <span> 
+  
+  
+  </span>
+
+  <script src="scripts/main.js"></script>
+
+  </body>
+
+</html>
