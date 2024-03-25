@@ -1,5 +1,5 @@
 /* CSS */
-/* box數字可改 */
+/* box, rgb數字可改 */
 .box7:hover, .box8:hover, .box9:hover {
     cursor: pointer;
     background-color: rgba(255, 228, 196, 0.521);
