@@ -1,0 +1,7 @@
+<!doctype html>
+<html>
+  <body>
+    <button class="btn 1" id="js-btn1">Coffee</button>
+    <button class="btn 2" id="js-btn2">APCS</button>
+  </body>
+</html>
