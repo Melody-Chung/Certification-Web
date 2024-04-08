@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+    <link href="styles/Shopping Cart.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app">
+      <div class=”item_container” v-for=”(item,index) in itemList” :key=”item.id” >
+          <div class="item_header">
+              <div class="item_detail">商品</div>
+              <div class="price">單價</div>
+              <div class="count">數量</div> 
+              <div class="amount">總計</div>
+              <div class="operate">操作</div>
+          </div>
+          <div class="item_header item_body">
+              <div class="item_detail">
+                  <img src="https://images.unsplash.com/photo-1534961880437-ce5ae2033053?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80" alt="">
+                  <div class="name">優質短袖白T</div>
+              </div>
+  
+              <div class="price"><span>$</span>300</div>
+              <div class="count">
+                  <button>-</button>
+                  1
+                  <button>+</button>
+              </div> 
+              <div class="amount">300</div>
+              <div class="operate">
+                  <button>刪除</button>
+              </div>
+          </div>
+      </div>
+    </div>
+    <script src="scripts/Shopping Cart.js"></script>
+  </body>
+</html>
