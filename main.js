@@ -1,8 +1,8 @@
 
-    //碰文字顯示訊息
-document.querySelector("h1").onclick = function () {
-    alert("Ouch! Stop poking me!");
-  };
+//  文字顯示訊息
+// document.querySelector("h1").onclick = function () {
+//     alert("Ouch! Stop poking me!");
+//   };
   
   //轉換網頁
 // let coffeepage = document.querySelector(".box4");
@@ -25,28 +25,28 @@ myImage.onclick = function () {
     }
 }
     //網頁使用者改變
-var myButton = document.querySelector("button");
-var myHeading = document.querySelector("h1");
-if (!localStorage.getItem("name")) {
-    setUserName();
-} 
-else {
-    let storedName = localStorage.getItem("name");
-    myHeading.innerHTML = "Hello, " + storedName;
-}
-myButton.onclick = function () {
-    setUserName();
-};
-function setUserName() {
-    let myName = prompt("Please enter your name.");
-    if(!myName || myName === null) {
-        setUserName();
-    } 
-    else {
-    localStorage.setItem("name", myName);
-    myHeading.innerHTML = "Hello, " + myName;
-    }
-  }
+// var myButton = document.querySelector("button");
+// var myHeading = document.querySelector("h1");
+// if (!localStorage.getItem("name")) {
+//     setUserName();
+// } 
+// else {
+//     let storedName = localStorage.getItem("name");
+//     myHeading.innerHTML = "Hello, " + storedName;
+// }
+// myButton.onclick = function () {
+//     setUserName();
+// };
+// function setUserName() {
+//     let myName = prompt("Please enter your name.");
+//     if(!myName || myName === null) {
+//         setUserName();
+//     } 
+//     else {
+//     localStorage.setItem("name", myName);
+//     myHeading.innerHTML = "Hello, " + myName;
+//     }
+//   }
 
 
 var VisibleMenu = ''; // 記錄目前顯示的子選單的 ID
@@ -60,12 +60,7 @@ function switchMenu( theMainMenu, theSubMenu, theEvent ){
         // hideMenu(); // 隱藏子選單
         VisibleMenu = theSubMenu;
     }
-    // else{ // 隱藏子選單
-    //     if( theEvent != 'MouseOver' || VisibleMenu != theSubMenu ){
-    //         SubMenu.style.display = 'none';
-    //         VisibleMenu = '';
-    //     }
-    // }
+        
 }
 
 // 隱藏子選單
