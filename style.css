@@ -1,24 +1,92 @@
-html {
-    background-color: black;
-}
-body {
-    width: 1200px;
-    margin: 0 auto;
-    background-color:azure;
-    padding: 20px 20px 20px 20px;
-    border: 5px solid black;
-}
-img {
-    display: block;
-    margin: 0 auto;
-}
-.wrapper{
-    display: flex;
-    color:darkgoldenrod;
-    font-weight: bold;
+  * {
+    box-sizing: border-box;
+  }
+  .wrapper1 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: 10px;
+    /* position: absolute;
+    left: 55px; */
+    justify-content: center;
+    grid-template-columns: 500px 400px 400px 400px 400px;
+    grid-template-rows: 400px 100px;
+    column-gap: 10px;
+    width: 90%; /* Change width to allow responsiveness */
+    overflow-x: auto;
+  }
+  .wrapper2 {
+    display: grid;
+    font-weight: bold;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 60px 300px;
+    
 }
 
+  button{
+    font-size: 50px;
+    width: 150px; 
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  button.button2{
+    
+    font-size: 100px;
+    padding: 15px;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+  }
+  a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+    color: black;
+  }
+  .box7:hover, .box8:hover, .box9:hover, .box10:hover{
+    cursor: pointer;
+    background-color: rgba(255, 228, 196, 0.521);
+  }
+
+  .wrapper1 > div {
+    flex: 1;
+    border-radius: 5px;
+    padding: 1em;
+    background-color: rgb(255, 228, 196);
+    border: 2px solid rgb(160, 142, 119);
+    min-width: 400px; /* Ensure minimum width to prevent content from overflowing */
+  }
+  .wrapper2 > div {
+    flex: 1;
+  }
+  .wrapper1 img, .wrapper2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  h2{
+    font-size: 100px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+  html {
+    font-size: 30px; 
+    font-family: Noto Serif Traditional Chinese;
+  }
+  div{
+    display: flex;
+    justify-content: center;
+  }
+  /*test*/
+  .main-menu { color:#FFFFFF; background-color:#666666; padding:5px; margin:0px; cursor:pointer; display:inline-block; }  /* 主選單的樣式 */
+  .main-menu:hover { background-color:#6666668c; }
+  .sub-menu { background-color:lightgray; margin:5px -5px; padding:0px; list-style-type:none; position:absolute; } /*下拉清單的樣式 */
+  .sub-menu li { padding: 3px 5px; text-align:left; } /* 下拉清單每一列的樣式 */
+  .sub-menu li:hover { color:#FFFFFF; background-color:gray; }
+  .sub-menu a { text-align:left; display:block; text-decoration:none; color:black; }
+  .sub-menu a:hover { color:#FFFFFF; background-color:gray; text-decoration:none; }
+   
+  .move{
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0.235);
+    padding: 8px;
+    cursor: pointer;
+    display:inline-block;
+  }
   
