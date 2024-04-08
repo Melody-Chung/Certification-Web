@@ -1,24 +1,25 @@
-html {
-    background-color: black;
+h1{
+    color: blue;
 }
-body {
-    width: 1200px;
-    margin: 0 auto;
-    background-color:azure;
-    padding: 20px 20px 20px 20px;
-    border: 5px solid black;
-}
-img {
-    display: block;
-    margin: 0 auto;
-}
-.wrapper{
+
+.wrapper {
     display: flex;
-    color:darkgoldenrod;
+    color: darkblue;
     font-weight: bold;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 60px 300px;
+    /* gap: 10px; */
+}
+
+.wrapper>div{
+    flex: 1;
+}
+
+.wrapper img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
 }
 
   
