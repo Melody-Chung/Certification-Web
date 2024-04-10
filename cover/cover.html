@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>animation</title>
+<script type="text/javascript">
+window.onload=function(){
+    var title= document.getElementById("title");
+    title.addEventListener("mouseover", function(){
+        this.style.opacity=1;//淡入
+        //this.style.fontSize= "90px";  
+    })
+    title.addEventListener("mouseout", function(){
+        this.style.opacity=0.8;//淡入
+        //this.style.fontSize= "80px";  
+    })
+    document.getElementById("timeOut");
+    timeOut.addEventListener("click", function(click){
+        setTimeout(function(){location.href="file:///C:/Users/gfps/Desktop/web-projects/certificate/test-site/index.html"},2000); // 3秒後跳轉頁面
+    })
+
+    /*var box= document.getElementById("box");
+    box.addEventListener("mouseover", function(){
+        this.style.opacity=1;//淡入
+        this.style.backgroundColor="black";
+        this.style.height = '120px';
+        this.style.width = '120px';
+    })
+    box.addEventListener("mouseout", function(){
+        this.style.opacity=0.5;//淡入
+        this.style.backgroundColor="red";
+        this.style.height = '100px';
+        this.style.width = '100px';
+    })*/
+}
+// function timeOut(){
+//     document.getElementById("timeOut");
+//     timeOut.addEventListener("click", function(){
+//         this.setTimeout("location.href='file:///C:/Users/gfps/Desktop/web-projects/certificate/test-site/index.html'",3000); // 3秒後跳轉頁面
+//     })
+// }
+    
+</script>
+<style type="text/css">
+html {
+  background-color:slategrey;
+}
+.effect{
+    animation: blink 1s; 
+}
+/*定義動畫 blink*/
+@keyframes blink{
+    0%{opacity:0}
+    50%{opacity:1}
+    100%{opacity:0}
+}    
+<!--.box{
+    width:100px; height:100px; background-color:red; opacity:0.5 ;
+    transition: opacity 1s, background-color 1s, width 1s, height 1s, font-size 2s; /*監控opacity屬性，一旦用js對opacity進行設定，自動漸變*/
+}-->
+.title{
+    color:#FFFFFF;
+    font-size: 80px;
+    font-family: monospace;
+    opacity: 0.8;
+}
+.btn {
+    position: relative;
+    left: 42%;
+    min-width: 160px;
+    background: transparent;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 20px;
+}
+.btn span {
+    color: #FFFFFF;
+    mix-blend-mode:lighten;
+}
+.btn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 52px;
+    height: 100%;
+    border-radius: 50px;
+    background: black;
+    transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+}
+.btn:hover:before {
+  background: black;
+  width: 100%;
+}
+
+.btn:focus {
+    border-radius: 4em;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition-duration: 0.4s;
+    padding: 10px 20px;
+}
+.btn:hover {
+    color: white;
+    transition-duration: 0.1s;
+}
+.btn:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 40px white;
+    border-radius: 4em;
+}
+.btn:active:after {
+    opacity: 1;
+    transition: 0s;
+    box-shadow: 0 0 0 0 white;
+
+}
+.btn:active {
+    top: 1px;
+}
+
+
+</style>  
+</head>
+  <body>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <div align="center" id="title" class="title">CERTIFICATE.com</div>
+    <br><br>
+
+    <button class="btn" id="timeOut" >
+        <span>START</span>
+    </button>
+
+    <!--<div class="box" id="box"></div>-->
+  </body>
+</html>
