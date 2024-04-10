@@ -30,10 +30,13 @@ window.onload=function(){
         this.style.width = '100px';
     })*/
 }
-// function timeout(){
-//     document.getElementById("timeout");
-//     setTimeout("location.href='file:///C:/Users/gfps/Desktop/web-projects/certificate/test-site/index.html'",3000); // 3秒後跳轉頁面
-//     }
+function timeout(){
+    document.getElementById("timeOut");
+    timeOut.addEventListener("click", function(){
+        this.setTimeout("location.href='file:///C:/Users/gfps/Desktop/web-projects/certificate/test-site/index.html'",3000); // 3秒後跳轉頁面
+    })
+}
+    
 </script>
 <style type="text/css">
 html {
@@ -138,11 +141,11 @@ html {
     <br><br><br><br><br><br><br><br><br><br><br><br>
     <div align="center" id="title" class="title">CERTIFICATE.com</div>
     <br><br>
-    <a id="timeout">
-    <button class="btn" >
+
+    <button class="btn" id="timeout" >
         <span>START</span>
     </button>
-    </a>
+
     <!--<div class="box" id="box"></div>-->
   </body>
 </html>
