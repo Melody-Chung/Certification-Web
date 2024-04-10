@@ -14,8 +14,11 @@ window.onload=function(){
         this.style.opacity=0.8;//淡入
         //this.style.fontSize= "80px";  
     })
-    document.getElementById("timeout");
-    setTimeout("location.href='file:///C:/Users/gfps/Desktop/web-projects/certificate/test-site/index.html'",3000); // 3秒後跳轉頁面
+    document.getElementById("timeOut");
+    timeOut.addEventListener("click", function(click){
+        setTimeout(function(){location.href="file:///C:/Users/gfps/Desktop/web-projects/certificate/test-site/index.html"},3000); // 3秒後跳轉頁面
+    })
+
     /*var box= document.getElementById("box");
     box.addEventListener("mouseover", function(){
         this.style.opacity=1;//淡入
@@ -30,12 +33,12 @@ window.onload=function(){
         this.style.width = '100px';
     })*/
 }
-function timeout(){
-    document.getElementById("timeOut");
-    timeOut.addEventListener("click", function(){
-        this.setTimeout("location.href='file:///C:/Users/gfps/Desktop/web-projects/certificate/test-site/index.html'",3000); // 3秒後跳轉頁面
-    })
-}
+// function timeOut(){
+//     document.getElementById("timeOut");
+//     timeOut.addEventListener("click", function(){
+//         this.setTimeout("location.href='file:///C:/Users/gfps/Desktop/web-projects/certificate/test-site/index.html'",3000); // 3秒後跳轉頁面
+//     })
+// }
     
 </script>
 <style type="text/css">
@@ -142,7 +145,7 @@ html {
     <div align="center" id="title" class="title">CERTIFICATE.com</div>
     <br><br>
 
-    <button class="btn" id="timeout" >
+    <button class="btn" id="timeOut" >
         <span>START</span>
     </button>
 
